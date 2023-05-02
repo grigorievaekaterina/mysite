@@ -1,11 +1,11 @@
 {% extends "base_page.html" %}
 
 {% block page-title %}
-Записать слово ✍️
+Добавить задание 📌
 {% endblock %}
 
 {% block page-lead %}
-Для того, чтобы записать слово в словарь, заполните форму ниже.
+Скорее добавьте задание, чтобы его не забыть!
 {% endblock %}
 
 
@@ -26,21 +26,21 @@
             </div>
         </div>
         <div class="row px-5 py-2">
-            <h3>Запишите слово</h3>
+            <h3>Добавьте задание</h3>
         </div>
         <div class="row px-5 py-2">
             <div class="col-md-4">
-                <label for="new_term">Слово</label>
+                <label for="new_term">Номер задания</label>
                 <input type="text" class="form-control input-lg" name="new_term" id="new_term">
             </div>
             <div class="col-md-8">
-                <label for="new_definition">Перевод</label>
+                <label for="new_definition">Что нужно сделать?</label>
                 <textarea type="text" class="form-control input-lg" name="new_definition" id="new_definition" aria-describedby="definition_note" rows="3"></textarea>
-                <div id="definition_note" class="form-text">Можно добавить несколько значений слова через запятую 💡</div>
+                <div id="definition_note" class="form-text">Можно добавить несколько заданий через запятую 💡</div>
             </div>
         </div>
         <div class="row px-5 py-2">
-            <button type="submit" class="btn btn-primary" formaction="/send-term">Добавить</button>
+            <button type="submit" class="btn btn-primary" formaction="/send-task">Добавить</button>
         </div>
     </form>
 </div>

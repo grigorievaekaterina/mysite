@@ -1,5 +1,7 @@
 word;translation;source
-Hello;Привет;db
-Dog;Собака;db
 Cat;Кошка;db
+Dog;Собака;db
+Hello;Привет;db
 Human;Человек;db
+Mood;Настроение;user
+Student;Студент, школьник;user
